@@ -6,7 +6,9 @@ function App() {
   const [load, setLoad] = useState(false);
 
   return (
-    <ExplodingButton color="red" load={load} onClick={() => setLoad(!load)} >Send</ExplodingButton>
+    <>
+      <ExplodingButton backgroundColor={"black"} color={"white"} width={130} height={45} fontSize={20} load={load} onClick={() => setLoad(!load)}><i className='fa fa-spinner fa-spin hide'></i><span className="show">Send</span></ExplodingButton>
+    </>
   );
 }
 

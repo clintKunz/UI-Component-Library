@@ -1,7 +1,26 @@
 import styled from '@emotion/styled';
 
-export const ExplodingButton = styled.button(({...rest}) => ({...rest}), ({load}) => {
+export const ExplodingButton = styled.button(({width, height, color, backgroundColor, fontSize }) => ({
+    width,
+    height,
+    color,
+    backgroundColor,
+    fontSize
+}), ({onClick}) => ({onClick}), ({load}) => {
     if (load) return {
-        backgroundColor: "blue"
+        ".hide": {
+            display: "block"
+        },
+        ".show": {
+            display: "none"
+        }
+    }
+    else return {
+        ".hide": {
+            display: "none"
+        },
+        ".show": {
+            display: "block"
+        }
     }
 });

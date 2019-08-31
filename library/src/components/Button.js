@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ExplodingButton = styled.button(({width, height, color, backgroundColor, fontSize }) => ({
+export const Button = styled.button(({width, height, color, backgroundColor, fontSize }) => ({
     width,
     height,
     color,
